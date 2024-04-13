@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'backend',
+    'auth_clicker',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -35,7 +35,7 @@ def user_login(request):
         else:
             return render(request, 'login.html', {'invalid':True})
     else:
-        return render(request, 'login.html', {'invalid:False'})
+        return render(request, 'login.html', {'invalid':False})
 
 def user_logout(request):
     logout(request)

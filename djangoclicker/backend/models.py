@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
-# Create your models here.
 class Core(models.Model):
-    user = models.OneToOneField(User, null=False)
+    user_data = models.OneToOneField(User, on_delete=models.CASCADE, null=False)
+    # Другие поля вашей модели Core

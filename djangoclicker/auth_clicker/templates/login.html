@@ -10,13 +10,13 @@
   <body>
     <div class="header">
       <h3 class="site-name">LOGIN</h3>
-       
+
       </div>
     <main>
     <div align="center">
       <form method="post" action="{% url 'login' %}" >
         {% csrf_token %}
-        
+
         <div class="form-group">
             <label for="username"> Username: </label>
             <br>
@@ -34,7 +34,7 @@
        <p> Incorrect login or password. </p>
        {% endif %}
       </form>
-      
+
     </div>
     <div align="center">Or you can <a href="/registration">sign up</a></div>
     </main>
